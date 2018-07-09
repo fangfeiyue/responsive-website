@@ -7,7 +7,5 @@
     - 跟他的所使用的上下文情景有关
 ### 媒体查询
 #### 视口
-header1 | headers
---- | ---
 row1 col1 | row1 col2
 row2 col1 | row2 col2

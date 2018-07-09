@@ -14,4 +14,4 @@
     - 设备厂商说了算
     - 怎么来查看
         - window.screen.width
-        - [查看视口](http://viewportsizes.com/)
+        - [查看视口的网站](http://viewportsizes.com/)

@@ -15,3 +15,6 @@
     - 怎么来查看
         - window.screen.width
         - [查看视口的网站](http://viewportsizes.com/)
+- 布局视口
+    - 怎么来查看
+        - document.documentElement.clientWidth

@@ -18,3 +18,7 @@
 - 布局视口
     - 怎么来查看
         - document.documentElement.clientWidth
+viewport标签属性
+| width | height | user-scalable | initail-scale | minimun-scale | maximum-scale |
+| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |

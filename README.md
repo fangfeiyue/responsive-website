@@ -20,6 +20,7 @@
         - document.documentElement.clientWidth
 
 viewport标签属性
+
 | width | height | user-scalable | initail-scale | minimun-scale | maximum-scale |
 | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | 页面布局视口的宽 | 页面布局视口的高 | 是否允许用户缩放 | 页面的缩放级别 | 允许用户缩小到什么程度 | 允许用户放大到什么程度 |

@@ -44,3 +44,9 @@ viewport标签属性
 | speech | 语音合成器 |
 | tty | 使用固定字符间距的设备(终端或打印设备) |
 | tv | 电视 |
+
+- 常用媒介特性
+
+| width | height | orientation | resolution |
+|:-------:|:-------:|:-------:|:-------:|
+| 描述设备显示区域的宽度 | 描述设备显示区域的高度 | 设备方向(portrait|landscape) | 设备分辨率 |

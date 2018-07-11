@@ -49,4 +49,4 @@ viewport标签属性
 
 | width | height | orientation | resolution |
 |:-------:|:-------:|:-------:|:-------:|
-| 描述设备显示区域的宽度 | 描述设备显示区域的高度 | 设备方向(portrait|landscape) | 设备分辨率 |
+| 描述设备显示区域的宽度 | 描述设备显示区域的高度 | 设备方向(portrait or landscape) | 设备分辨率 |

@@ -29,3 +29,10 @@ viewport标签属性
 
 ![媒体查询一般形式](https://github.com/fangfeiyue/responsive-website/blob/master/imgs/media.png)
 
+#### 媒介查询各个参数
+- type
+| 类型 | 目标设备 |
+|:-------:|:-------:|
+| all | 所有设备(默认) |
+| braille | 盲文触觉反馈设备 |
+| embossed | 分页盲文打印机 |

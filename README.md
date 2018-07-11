@@ -61,3 +61,11 @@ viewport标签属性
 | and | not | or | only |
 |:-------:|:-------:|:-------:|:-------:|
 | 连接多个表达短语 | 对整个表达式say not | 其实是逗号可以表达or的意思 | 表达仅当...含义 有特别的用途哦 |
+
+- only逻辑关系词
+    - 对于支持媒介类型查询，但不支持媒介特性的user-agent，屏蔽
+    - 对于都支持的user-agent,only media-type=media-type
+```
+@media screen and (min-width:400px){}
+@media only screen and (min-width:400px){}
+```

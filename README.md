@@ -26,5 +26,5 @@ viewport标签属性
 | 页面布局视口的宽 | 页面布局视口的高 | 是否允许用户缩放 | 页面的缩放级别 | 允许用户缩小到什么程度 | 允许用户放大到什么程度 |
 | device-width或者确定的值400px | device-height或者确定的值400px | yes or no | 0.0-10.0 | 0.0-10. | 0.0-10.0 |
 - 媒体查询一般形式
-![媒体查询一般形式]()
+![媒体查询一般形式](https://github.com/fangfeiyue/responsive-website/blob/master/imgs/media.png)
 

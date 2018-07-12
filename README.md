@@ -76,3 +76,7 @@ viewport标签属性
 - 结构复杂多变
 - 承载业务型
 - 一页多适配不合算
+
+### 彩蛋
+
+- vscode插件 [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)       Launch a development local Server with live reload feature for static & dynamic pages. 

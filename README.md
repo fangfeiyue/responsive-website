@@ -69,3 +69,10 @@ viewport标签属性
 @media screen and (min-width:400px){}
 @media only screen and (min-width:400px){}
 ```
+
+### 分而治之
+
+当我们用移动端访问www.taobao.com网站会重定向到m.taobao.com，因为pc端和移动端的布局有很大的不同，如果各个页面都适配移动端太过复杂，不如重写。什么情况下适合给网站重写移动端呢？
+- 结构复杂多变
+- 承载业务型
+- 一页多适配不合算

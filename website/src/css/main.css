@@ -1,6 +1,50 @@
+/* 公共样式 */
+html {
+    background-color: #ff50ac;
+}
+a {
+    text-decoration: none;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
 /* desktop规则 */
 .desktop {
-
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.desktop-header {
+    width: 100%;
+    height: 86px;
+    overflow: hidden;
+    line-height: 86px;
+}
+.desktop-header-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.desktop-header-l {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.desktop-header nav ul li { 
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 12px;
+}
+.desktop-header a {
+    color: #fff;
+}
+.desktop-nav-active {
+    border-top: 4px solid #fff;
 }
 .mobile {
     display: none;

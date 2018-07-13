@@ -1,0 +1,16 @@
+/* desktop规则 */
+.desktop {
+
+}
+.mobile {
+    display: none;
+}
+/* 媒体查询断点  mobile规则 */
+@media (max-width:768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

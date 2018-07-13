@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getResult (targetNum) {
+            let i = 0;
+            let sum = 0;
+            let arr = [];
+
+            while (sum < targetNum) {
+                let item = Math.pow(2, i);
+                sum += item;
+                arr.push(item);
+                i++;
+            }
+            console.log('和为', sum, '求和的每项为',arr);
+        }
+
+        getResult(31);
+    </script>
+</body>
+</html>

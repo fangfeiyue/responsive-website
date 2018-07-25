@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="../dist/css/mobile.css">
     <title>Document</title>
+    <script>
+        ! function (e, t) {
+            function n() {
+                t.body ? t.body.style.fontSize = 12 * o + "px" : t.addEventListener("DOMContentLoaded", n)
+            }
+
+            function d() {
+                var e = i.clientWidth / 10;
+                i.style.fontSize = e + "px"
+            }
+            var i = t.documentElement,
+                o = e.devicePixelRatio || 1;
+            if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function (e) {
+                    e.persisted && d()
+                }), o >= 2) {
+                var a = t.createElement("body"),
+                    s = t.createElement("div");
+                s.style.border = ".5px solid transparent", a.appendChild(s), i.appendChild(a), 1 === s.offsetHeight &&
+                    i.classList.add("hairlines"), i.removeChild(a)
+            }
+        }(window, document);
+    </script>
 </head>
+
 <body>
     <div class="desktop">
         <div class="desktop-header">
@@ -17,10 +43,18 @@
             <div class="desktop-header-r pull-right">
                 <nav>
                     <ul>
-                        <li class="desktop-nav-active"><a href="mailto:">HOME</a></li>
-                        <li><a href="mailto:">HOME</a></li>
-                        <li><a href="mailto:">HOME</a></li>
-                        <li><a href="mailto:">HOME</a></li>
+                        <li class="desktop-nav-active">
+                            <a href="mailto:">HOME</a>
+                        </li>
+                        <li>
+                            <a href="mailto:">HOME</a>
+                        </li>
+                        <li>
+                            <a href="mailto:">HOME</a>
+                        </li>
+                        <li>
+                            <a href="mailto:">HOME</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -47,8 +81,11 @@
             download
         </div>
         <div class="mobile-nav">
-            nav
+            <div>HOME1</div>
+            <div>HOME2</div>
+            <div>HOME3</div>
         </div>
     </div>
 </body>
+
 </html>

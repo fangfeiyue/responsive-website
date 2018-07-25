@@ -3,6 +3,10 @@
 ### 前言
 现在已经进入移动互联网时代，用户很多时候都是在手机上浏览网站的，但是也不刨除用户会在PC端浏览网站，但是什么网站都直接做一套移动端页面一套PC端页面无形中增加了开发成本，尤其是对一些纯展示类的网站开发多套页面显示是不合适的，这个时候我们就可以运用响应式开发技术用一套代码适配多终端，响应式开发可以让用户体验和开发效率完美结合。
 
+### 总结
+[基础知识总结](https://github.com/fangfeiyue/responsive-website/blob/master/preliminary_data/readme.md)
+[项目总结](https://github.com/fangfeiyue/responsive-website/tree/master/website/readme.md)
+
 ### 技术栈
 - 媒体查询
 - flex布局
@@ -16,7 +20,6 @@
 ++-- imgs  存储了一些readme文档相关的图片
 ++-- website   项目目录
 ++-- preliminary_data  响应式开发一些相关技术的介绍和demo
-     ++-- [百度](www.baidu.com)
 ```
 ### 项目截图
 ### 彩蛋

@@ -17,7 +17,7 @@
 ++-- website   项目目录
 ++-- preliminary_data  响应式开发一些相关技术的介绍和demo
 ```
-
+### 项目截图
 ### 彩蛋
 
 - vscode插件 [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)       Launch a development local Server with live reload feature for static & dynamic pages. 

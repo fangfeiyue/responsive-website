@@ -12,8 +12,11 @@
 
 ### 目录结构简介
 .
+
 ++-- imgs  存储了一些readme文档相关的图片
+
 ++-- website   项目目录
+
 ++-- preliminary_data  响应式开发一些相关技术的介绍和demo
 
 ### 彩蛋

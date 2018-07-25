@@ -80,3 +80,19 @@ viewport标签属性
 ### 彩蛋
 
 - vscode插件 [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)       Launch a development local Server with live reload feature for static & dynamic pages. 
+
+### 个人简介
+
+作者：房飞跃
+
+职业：web前端开发工程师
+
+爱好：探索新事物，学习新知识
+
+座右铭：一个终身学习者
+
+### 交流
+
+QQ号：294925572
+
+QQ群：678941904

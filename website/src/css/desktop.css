@@ -124,18 +124,18 @@
     color: #fff;
 }
 .desktop-btn-active span:first-child {
-    background: url('../img/demo-appstore-logo-white.png') no-repeat;
+    /* background: url('../img/demo-appstore-logo-white.png') no-repeat; */
 }
 .desktop-btn-logo {
     width: 20px;
     height: 20px;
-    background-size: cover;
+    background-size: 100% 100%;
     display: inline-block;
     margin-right: 8.5px;
     vertical-align: middle;
 }
 .appstore-logo {
-    background-image: url('../img/demo-appstore-logo.png');
+    background-image: url('../img/demo-appstore-logo-white.png');
     background-repeat: no-repeat;
 }
 .android-logo {

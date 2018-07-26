@@ -40,7 +40,7 @@
     width: 850px;
 }
 .desktop-content-download {
-    padding-top: 130px;
+    padding-top: 50px;
 }
 .desktop-content-download, .desktop-content-preview {
     display: table-cell;
@@ -98,6 +98,9 @@
 .desktop-btns {
     margin-top: 60px;
 }
+.desktop-btns .desktop-btn:first-child{
+    margin-right: 30px;
+}
 .desktop-btn {
     width: 170px;
     height: 50px;
@@ -116,6 +119,13 @@
     box-sizing: border-box;
     font-weight: 800;
 }
+.desktop-btn-active {
+    background-image: linear-gradient(-90deg, #8450FF 1%, #33AEFF 100%);
+    color: #fff;
+}
+.desktop-btn-active span:first-child {
+    background: url('../img/demo-appstore-logo-white.png') no-repeat;
+}
 .desktop-btn-logo {
     width: 20px;
     height: 20px;
@@ -132,4 +142,36 @@
     background-image: url('../img/demo-googleplay-logo.png');
     background-repeat: no-repeat;
 }
-
+.desktop-content-preview {
+    text-align: right;
+}
+.desktop-content-preview .phone {
+    width: 270px;
+    height: 486px;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    background: url('../img/demo-phone.png') no-repeat;
+    background-size: cover;
+    background-position: 0;
+}
+.desktop-content-preview video {
+    position: absolute;
+    left: 35px;
+    top: 47px;
+    width: 202px;
+    height: 357px;
+    background-color: #fff;
+}
+.desktop-content-preview .play-btn {
+    position: absolute;
+    background: url('../img/demo-play-btn.png') no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 42%;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+}

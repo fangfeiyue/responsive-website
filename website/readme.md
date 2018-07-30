@@ -47,7 +47,7 @@ gulp.task('default', function () {
            .pipe(gulp.dest('./dist/css/'));
 });
 ```
-- Q:使用npm运行react程序报错The 'mode' option has not been set, webpack will fallback to 'production' for th
+- Q:使用npm运行react程序报错The 'mode' option has not been set, webpack will fallback to 'production'
 
 A: 只需要在项目中的package.json中script中配置上"dev": "webpack --mode development",    "build": "webpack --mode production" 两句即可使用方法在cmd中输入 npm run dev (开发环境输出的index.js没有压缩) 
 - Q:在项目里运行webpack命令后报`WARNING in configuration

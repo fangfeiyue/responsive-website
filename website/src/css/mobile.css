@@ -1,4 +1,4 @@
-mobile {
+.mobile {
     display: none;
 }
 /* 媒体查询断点  mobile规则 */
@@ -15,5 +15,55 @@ mobile {
         color: #fff;
         opacity: 0.7;
         margin-top: 96px;
+    }
+    .mobile-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        background-color: #fff;
+        padding: 16px 24px;
+        box-sizing: border-box;
+        box-shadow: inset 0 0 0 0 rgba(226, 226, 226, 0.5);
+    }
+    .mobile-top-bar .left {
+        display: flex;
+        align-items: center;
+    }
+    .mobile-top-bar .left img {
+        width: 84px;
+        height: 84px;
+        margin-right: 20px;
+    }
+    .mobile-top-bar .left .slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mobile-top-bar .left .slogan p:first-child {
+        color: #FB4282;
+        font-size: 28px;
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+    .mobile-top-bar .left .slogan p:last-child {
+        color: #CACACA;
+        font-size: 16px;
+    }
+    .mobile-top-bar .mobile-download-btn{
+        width: 200px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        font-weight: 800;
+        font-size: 28px;
+        color: #fff;
+        border-radius: 170px;
+        -webkit-border-radius: 170px;
+        -moz-border-radius: 170px;
+        -ms-border-radius: 170px;
+        -o-border-radius: 170px;
+        box-shadow: 0 5px 14px 0 rgba(255, 67, 132, 0.36);
+        background-image: linear-gradient(45deg, #FF239C 0%, #FF2B51 100%);
     }
 }

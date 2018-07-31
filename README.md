@@ -19,6 +19,8 @@
 ```
 ### 项目截图
 
+[项目截图](https://github.com/fangfeiyue/responsive-website/blob/master/imgs/response-web.gif)
+
 ### 总结
 [基础知识总结](https://github.com/fangfeiyue/responsive-website/blob/master/preliminary_data/readme.md)
 

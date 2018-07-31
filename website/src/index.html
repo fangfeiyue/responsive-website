@@ -11,26 +11,61 @@
     <link rel="stylesheet" href="../dist/css/mobile.css">
     <title>Document</title>
     <script>
-        ! function (e, t) {
-            function n() {
-                t.body ? t.body.style.fontSize = 12 * o + "px" : t.addEventListener("DOMContentLoaded", n)
+       ! function (a, b) {
+            function c() {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
             }
-
-            function d() {
-                var e = i.clientWidth / 10;
-                i.style.fontSize = e + "px"
+            var d, e = a.document,
+                f = e.documentElement,
+                g = e.querySelector('meta[name="viewport"]'),
+                h = e.querySelector('meta[name="flexible"]'),
+                i = 0,
+                j = 0,
+                k = b.flexible || (b.flexible = {});
+            if (g) {
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            } else if (h) {
+                var m = h.getAttribute("content");
+                if (m) {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/),
+                        o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j =
+                        parseFloat((1 / i).toFixed(2)))
+                }
             }
-            var i = t.documentElement,
-                o = e.devicePixelRatio || 1;
-            if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function (e) {
-                    e.persisted && d()
-                }), o >= 2) {
-                var a = t.createElement("body"),
-                    s = t.createElement("div");
-                s.style.border = ".5px solid transparent", a.appendChild(s), i.appendChild(a), 1 === s.offsetHeight &&
-                    i.classList.add("hairlines"), i.removeChild(a)
+            if (!i && !j) {
+                var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                    q = a.devicePixelRatio;
+                i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
             }
-        }(window, document);
+            if (f.setAttribute("data-dpr", i), !g)
+                if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content",
+                        "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"),
+                    f.firstElementChild) f.firstElementChild.appendChild(g);
+                else {
+                    var r = e.createElement("div");
+                    r.appendChild(g), e.write(r.innerHTML)
+                }
+            a.addEventListener("resize", function () {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a) {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener(
+                "DOMContentLoaded",
+                function () {
+                    e.body.style.fontSize = 12 * i + "px"
+                }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a) {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
     </script>
 </head>
 
@@ -82,7 +117,7 @@
             </div>
             <div class="desktop-content-preview">
                 <div class="phone">
-                    <video src="//v3.mukewang.com/jiuyeban/5af28cc0e520e5971c8b4771/H.mp4"></video>
+                    <video poster="./img/cover.png" src="//v3.mukewang.com/jiuyeban/5af28cc0e520e5971c8b4771/H.mp4"></video>
                     <div class="play-btn"></div>
                 </div>
             </div>
@@ -106,18 +141,34 @@
             </div>
         </div>
         <div class="mobile-logo">
-            logo区
+            <div class="left">
+                <img src="./img/demo-logo-30x30.png" alt="">
+            </div>
+            <div class="right">
+                <p>
+                    <img src="./img/demo-slogan.gif" alt="">
+                </p>
+                <p>
+                    Be Joyful  &  Be Young
+                </p>
+            </div>
         </div>
         <div class="mobile-slogan">
-            slogan
+            <div class="slogan-1">
+                <p>We Use Video</p>
+                <p>To Connect The Word</p>
+            </div>
+            <div class="slogan-2">
+                An Original Social Video Creator Community
+            </div>
         </div>
         <div class="mobile-download">
-            download
+            Download Now
         </div>
         <div class="mobile-nav">
-            <div>HOME1</div>
-            <div>HOME2</div>
-            <div>HOME3</div>
+            <div>CONTACT</div>
+            <div>CONTACT</div>
+            <div>CONTACT</div>
         </div>
     </div>
 </body>

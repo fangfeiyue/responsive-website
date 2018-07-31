@@ -66,4 +66,57 @@
         box-shadow: 0 5px 14px 0 rgba(255, 67, 132, 0.36);
         background-image: linear-gradient(45deg, #FF239C 0%, #FF2B51 100%);
     }
+    .mobile-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 240px;
+        margin-bottom: 80px;
+    }
+    .mobile-logo .left {
+        margin-right: 20px;
+    }
+    .mobile-logo .left img {
+        width: 160px;
+        height: 160px;
+    }
+    .mobile-logo .right p:last-child {
+        color: #FFFFFF;
+        opacity: .7;
+        font-size: 16px;
+    }
+    .mobile-logo .right img {
+        width: 200px;
+        height: 80px;
+    }
+    .mobile-slogan {
+        font-weight: 800;
+        text-align: center;
+    }
+    .mobile-slogan .slogan-1 {
+        font-size: 60px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+    .mobile-slogan .slogan-1 p:first-child {
+        margin-bottom: 10px;
+    }
+    .mobile-slogan .slogan-2 {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+    .mobile-download {
+        background: #FFFFFF;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.20);
+        border-radius: 150px;
+        width:650px;
+        height:120px;
+        line-height: 120px;
+        text-align: center;
+        color: #FB4282;
+        margin:0 auto;
+        margin-top:88px;
+        font-size:42px;
+        font-weight: 800;
+    }
 }
